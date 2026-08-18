@@ -9,7 +9,7 @@ export function getGeminiApiKey(): string {
 }
 
 export function getGeminiModelCandidates(): string[] {
-  return [process.env.GEMINI_MODEL, "gemini-flash-latest", "gemini-2.0-flash"].filter(
+  return [process.env.GEMINI_MODEL, "gemini-3.6-flash", "gemini-flash-latest"].filter(
     (m): m is string => Boolean(m?.trim())
   );
 }

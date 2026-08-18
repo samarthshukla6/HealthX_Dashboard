@@ -138,7 +138,7 @@ Open [http://localhost:3000](http://localhost:3000).
 |----------|----------|-------------|
 | `NEXT_PUBLIC_ELEVENLABS_AGENT_ID` | Yes (voice) | Public agent ID from [ElevenLabs Conversational AI](https://elevenlabs.io/app/conversational-ai) |
 | `GEMINI_API_KEY` | Yes (reports) | From [Google AI Studio](https://aistudio.google.com/apikey) |
-| `GEMINI_MODEL` | No | Override model (default fallback chain: `gemini-flash-latest`, `gemini-2.0-flash`) |
+| `GEMINI_MODEL` | No | Override model (default fallback chain: `gemini-3.6-flash`, `gemini-flash-latest`) |
 | `EMAIL_SERVER_HOST` | For email | e.g. `smtp.gmail.com` |
 | `EMAIL_SERVER_PORT` | For email | e.g. `587` |
 | `EMAIL_SERVER_USER` | For email | SMTP username |
