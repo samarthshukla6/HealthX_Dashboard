@@ -10,11 +10,7 @@ An AI-powered virtual health consultation platform. Talk to **Dr. Elara** over v
 
 ## Screenshots
 
-<!-- Paste or link your app screenshots here -->
-
-| Virtual consultation | Live transcript & report |
-|:---:|:---:|
-| *(your screenshot)* | *(your screenshot)* |
+<img width="1519" height="886" alt="Image" src="https://github.com/user-attachments/assets/96d87d4b-f097-43c9-82f6-39e16c8d18da" />
 
 ---
 
