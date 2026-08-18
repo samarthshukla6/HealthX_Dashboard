@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import {
   FileText,
   Download,
@@ -47,7 +47,6 @@ export default function ConsultationReportActions({
   const [scheduleDoctor, setScheduleDoctor] = useState(null);
   const [scheduleDate, setScheduleDate] = useState("");
   const [scheduleTime, setScheduleTime] = useState("");
-  const [availableSlots, setAvailableSlots] = useState(TIME_SLOTS);
   const [isScheduling, setIsScheduling] = useState(false);
   const [scheduleFeedback, setScheduleFeedback] = useState(null);
   const [showPreview, setShowPreview] = useState(false);
@@ -110,31 +109,7 @@ export default function ConsultationReportActions({
     setScheduleDate("");
     setScheduleTime("");
     setScheduleFeedback(null);
-    setAvailableSlots(TIME_SLOTS);
   };
-
-  const fetchSlots = async (doctorId, date) => {
-    if (!date) {
-      setAvailableSlots(TIME_SLOTS);
-      return;
-    }
-    try {
-      const res = await fetch(`/api/schedule-appointment?doctorId=${doctorId}`);
-      const data = await res.json();
-      const booked = (data.bookedSlots || [])
-        .filter((s) => s.appointmentDate === date)
-        .map((s) => s.appointmentTime);
-      setAvailableSlots(TIME_SLOTS.filter((t) => !booked.includes(t)));
-    } catch {
-      setAvailableSlots(TIME_SLOTS);
-    }
-  };
-
-  useEffect(() => {
-    if (scheduleDoctor && scheduleDate) {
-      fetchSlots(scheduleDoctor.id, scheduleDate);
-    }
-  }, [scheduleDoctor, scheduleDate]);
 
   const handleScheduleSubmit = async (e) => {
     e.preventDefault();
@@ -360,7 +335,7 @@ export default function ConsultationReportActions({
                   <SelectValue placeholder={scheduleDate ? "Pick a time" : "Select date first"} />
                 </SelectTrigger>
                 <SelectContent>
-                  {availableSlots.map((slot) => (
+                  {TIME_SLOTS.map((slot) => (
                     <SelectItem key={slot} value={slot}>{slot}</SelectItem>
                   ))}
                 </SelectContent>
