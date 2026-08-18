@@ -2,7 +2,7 @@
 
 An AI-powered virtual health consultation platform. Talk to **Dr. Elara** over voice, pick a health avatar, get a live transcript, and generate a structured medical report you can download or send to a specialist.
 
-**Live demo:** [https://health-x-dashboard-qy5i-pi.vercel.app/](https://health-x-dashboard-qy5i-pi.vercel.app/)
+**Live demo:** [https://health-x-dashboard.vercel.app/](https://health-x-dashboard.vercel.app/)
 
 **Repository:** [github.com/samarthshukla6/HealthX_Dashboard](https://github.com/samarthshukla6/HealthX_Dashboard)
 
@@ -171,7 +171,7 @@ See [`.env.example`](.env.example) for a template.
 2. Add all environment variables from `.env.example` in **Project → Settings → Environment Variables**.
 3. Deploy — the app is a standard Next.js project; no database or extra services needed.
 
-Production URL: [https://health-x-dashboard-qy5i-pi.vercel.app/](https://health-x-dashboard-qy5i-pi.vercel.app/)
+Production URL: [https://health-x-dashboard.vercel.app/](https://health-x-dashboard.vercel.app/)
 
 ---
 
@@ -188,7 +188,7 @@ Production URL: [https://health-x-dashboard-qy5i-pi.vercel.app/](https://health-
 
 | Resource | URL |
 |----------|-----|
-| **Live app** | [health-x-dashboard-qy5i-pi.vercel.app](https://health-x-dashboard-qy5i-pi.vercel.app/) |
+| **Live app** | [health-x-dashboard-qy5i-pi.vercel.app](https://health-x-dashboard.vercel.app/) |
 | **GitHub** | [samarthshukla6/HealthX_Dashboard](https://github.com/samarthshukla6/HealthX_Dashboard) |
 | **ElevenLabs Conversational AI** | [elevenlabs.io/conversational-ai](https://elevenlabs.io/conversational-ai) |
 | **Google Gemini API** | [ai.google.dev](https://ai.google.dev/) |
