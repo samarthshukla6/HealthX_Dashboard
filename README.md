@@ -1,2 +1,2 @@
 # HealthX_Dashboard
-<img width="1611" height="904" alt="Image" src="https://github.com/user-attachments/assets/779342af-252c-433c-9f3d-1c1d5ccee974" />
+<img width="1519" height="886" alt="Image" src="https://github.com/user-attachments/assets/96d87d4b-f097-43c9-82f6-39e16c8d18da" />
